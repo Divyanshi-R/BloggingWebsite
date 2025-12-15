@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAILY-MUSE</title>
+    <link rel="stylesheet" href="styleheader.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Welcome to My Blog</h2>
+            <p>Sharing my thoughts, tutorials, and experiences in web development.</p>
+        </section>
+        <section class="blogs">
+            <div class="blog-card">
+                <h3>How I Started Web Development</h3>
+                <p>A beginner-friendly story of my journey into HTML, CSS, and JavaScript.</p>
+                <a href="post1.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>CSS Tips for Clean UI</h3>
+                <p>Simple CSS techniques to make your website look modern and responsive.</p>
+                <a href="post2.html">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>JavaScript Basics Explained</h3>
+                <p>Understanding variables, functions, and DOM manipulation easily.</p>
+                <a href="post3.html">Read More →</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 My Static Blog | Built with HTML, CSS & JS</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
